@@ -16,7 +16,7 @@ namespace webTools
         {
             double[] root = _solver.SolveEquation(1, 2, 1);
             Assert.AreEqual(root.Length, 1);
-            Assert.AreEqual(root[0], -11);
+            Assert.AreEqual(root[0], -1);
 
             root = _solver.SolveEquation(5, -9, 4);
             Assert.AreEqual(root.Length, 2);
