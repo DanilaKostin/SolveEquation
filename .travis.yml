@@ -1,0 +1,8 @@
+language: csharp
+solution: webTools.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore webTools.sln
+after_script:
+  - nunit-console bin/Release/netcoreapp3.1/webTools.dll
